@@ -1,8 +1,10 @@
-package br.com.gabriel;
+package br.com.gabriel.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import br.com.gabriel.R;
 
 public class MainActivity extends AppCompatActivity {
 
