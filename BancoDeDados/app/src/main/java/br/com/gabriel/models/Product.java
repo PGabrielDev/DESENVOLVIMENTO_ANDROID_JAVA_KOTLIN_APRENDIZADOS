@@ -1,6 +1,7 @@
 package br.com.gabriel.models;
 
 public class Product {
+    private Integer id;
     private String nome;
     private String fornecedor;
 
@@ -18,5 +19,13 @@ public class Product {
 
     public void setFornecedor(String fornecedor) {
         this.fornecedor = fornecedor;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

@@ -1,7 +1,9 @@
 package br.com.gabriel.models;
 
-public class Client {
+import android.content.Intent;
 
+public class Client {
+    private Integer id;
     private String nome;
     private String email;
 
@@ -19,5 +21,13 @@ public class Client {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

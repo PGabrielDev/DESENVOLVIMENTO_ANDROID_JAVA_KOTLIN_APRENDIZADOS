@@ -5,9 +5,9 @@ import java.util.List;
 public interface ICrud<T> {
 
 
-    void incluir(T objeto);
-    void alterar(T objeto);
-    void Deletar(T objeto);
+    boolean incluir(T objeto);
+    boolean alterar(T objeto);
+    boolean Deletar(T objeto);
     List<T> listar(T objeto);
 
 
