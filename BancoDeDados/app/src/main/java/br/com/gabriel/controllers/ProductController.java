@@ -21,7 +21,7 @@ public class ProductController extends AppDataBase implements ICrud<Product>  {
     public boolean incluir(Product product) {
         dadosDoproduct.put("nome", product.getNome());
         dadosDoproduct.put("fornecedor", product.getFornecedor());
-        return  false;
+        return  insert("produto", dadosDoproduct);
     }
 
     @Override
