@@ -30,4 +30,12 @@ public class Client {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    public Client(String nome, String email) {
+        this.nome = nome;
+        this.email = email;
+    }
+    public  Client(){
+
+    }
 }
