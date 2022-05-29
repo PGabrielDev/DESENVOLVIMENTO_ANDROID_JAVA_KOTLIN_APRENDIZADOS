@@ -52,4 +52,16 @@ public class AppDataBase extends SQLiteOpenHelper {
         }
         return flSucesso;
     }
+    protected boolean deleteById(String tabela ,Integer id){
+        db= getWritableDatabase();
+        Boolean flSucesso = false;
+
+        try {
+            flSucesso =  db.delete(tabela,"id = ?",new String[] {String.valueOf(id)}) > 0;
+        }catch (Exception ex){
+            Log.d(AppUtils.TAG, "Insert: error -> " + ex.getMessage());
+
+        }
+        return  flSucesso;
+    }
 }

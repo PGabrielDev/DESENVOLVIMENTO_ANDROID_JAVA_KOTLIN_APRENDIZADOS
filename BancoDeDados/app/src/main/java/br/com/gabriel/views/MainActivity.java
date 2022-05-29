@@ -24,13 +24,20 @@ public class MainActivity extends AppCompatActivity {
         Log.d(AppUtils.TAG, "onCreate: App minha Idea...");
         clienteController = new ClienteController(getApplicationContext());
         productController = new ProductController(getApplicationContext());
-        client = new Client("Gabriel", "gabrielgatomimado@hotmail.com");
-        if(clienteController.incluir(client)){
-            Toast.makeText(MainActivity.this, "cliente " + client.getNome() + " Incluido com sucesso...",
-                    Toast.LENGTH_SHORT).show();
+//        client = new Client("Gabriel", "gabrielgatomimado@hotmail.com");
+//        if(clienteController.incluir(client)){
+//            Toast.makeText(MainActivity.this, "cliente " + client.getNome() + " Incluido com sucesso...",
+//                    Toast.LENGTH_SHORT).show();
+//        }else {
+//            Toast.makeText(MainActivity.this, "cliente " + client.getNome() + " Não Incluido com sucesso...",
+//                    Toast.LENGTH_SHORT).show();
+//        }
+        if(clienteController.Deletar(1)){
+            Toast.makeText(MainActivity.this, "cliente de id: " + 1 + " Incluido com sucesso...",
+            Toast.LENGTH_SHORT).show();
         }else {
-            Toast.makeText(MainActivity.this, "cliente " + client.getNome() + " Não Incluido com sucesso...",
-                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "cliente " + 1 + " Não Incluido com sucesso...",
+            Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -33,8 +33,8 @@ public class ProductController extends AppDataBase implements ICrud<Product>  {
     }
 
     @Override
-    public boolean Deletar(Product product) {
-        dadosDoproduct.put("id", product.getId());
+    public boolean Deletar(Integer product) {
+       // dadosDoproduct.put("id", product.getId());
         return  false;
     }
 
